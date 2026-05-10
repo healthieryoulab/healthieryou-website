@@ -26,7 +26,7 @@ For privacy details, see our [Privacy Policy](https://healthieryoulab.github.io/
 
 For any question, bug report, account issue, or general feedback:
 
-**support@healthieryou.app**
+**healthieryou.support@gmail.com**
 
 We read every message. Response time is typically within a few business days.
 
@@ -120,7 +120,7 @@ Healthier You 是一本以照片为主的安静饮食日记，配 AI 辅助的�
 
 如有任何问题、bug、账号问题或一般反馈，请发邮件至：
 
-**support@healthieryou.app**
+**healthieryou.support@gmail.com**
 
 我们会读每一条信息，通常在几个工作日内回复。
 

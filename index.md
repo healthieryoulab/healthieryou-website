@@ -16,4 +16,4 @@ A calm, photo-first meal journal with AI-assisted calorie estimates.
 
 ---
 
-Contact: **support@healthieryou.app**
+Contact: **healthieryou.support@gmail.com**

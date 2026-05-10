@@ -22,7 +22,7 @@ Healthier You is a mobile application that helps you keep a photo-based meal jou
 
 This policy applies to the Healthier You iOS app and its supporting services (the "Service"). It does not apply to third-party websites or services linked from the Service.
 
-If you have questions about this policy, contact us at **support@healthieryou.app**.
+If you have questions about this policy, contact us at **healthieryou.support@gmail.com**.
 
 ### 2. Data we collect
 
@@ -114,7 +114,7 @@ Each provider processes data on our behalf under its own privacy and security co
 
 ### 8. Children's privacy
 
-Healthier You is not directed to children under 13. We do not knowingly collect data from children under 13. If you believe a child has created an account, contact us at **support@healthieryou.app** and we will remove the account.
+Healthier You is not directed to children under 13. We do not knowingly collect data from children under 13. If you believe a child has created an account, contact us at **healthieryou.support@gmail.com** and we will remove the account.
 
 ### 9. Changes to this policy
 
@@ -123,7 +123,7 @@ We may update this policy from time to time. Material changes will be reflected 
 ### 10. Contact
 
 For questions, requests, or concerns about your data:
-**support@healthieryou.app**
+**healthieryou.support@gmail.com**
 
 ---
 
@@ -135,7 +135,7 @@ Healthier You 是一款帮助你以照片方式记录饮食、并由 AI 协助�
 
 本政策适用于 Healthier You iOS 应用及其支持服务（统称"服务"），不适用于服务中链接的第三方网站或服务。
 
-如果你对本政策有疑问，请联系 **support@healthieryou.app**。
+如果你对本政策有疑问，请联系 **healthieryou.support@gmail.com**。
 
 ### 2. 我们收集的数据
 
@@ -227,7 +227,7 @@ Healthier You 是一款帮助你以照片方式记录饮食、并由 AI 协助�
 
 ### 8. 未成年人隐私
 
-Healthier You 并非面向 13 岁以下儿童设计。我们不会有意收集 13 岁以下儿童的数据。如你认为有儿童创建了账号，请联系 **support@healthieryou.app**，我们将移除该账号。
+Healthier You 并非面向 13 岁以下儿童设计。我们不会有意收集 13 岁以下儿童的数据。如你认为有儿童创建了账号，请联系 **healthieryou.support@gmail.com**，我们将移除该账号。
 
 ### 9. 政策的变更
 
@@ -236,4 +236,4 @@ Healthier You 并非面向 13 岁以下儿童设计。我们不会有意收集 1
 ### 10. 联系方式
 
 关于你的数据如有任何疑问、请求或担忧：
-**support@healthieryou.app**
+**healthieryou.support@gmail.com**

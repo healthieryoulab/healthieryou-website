@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy.html
 ---
 
-# Privacy Policy · Healthier You
+# Privacy Policy · Healthier You Calorie
 
 **Last updated**: May 10, 2026
 
@@ -18,9 +18,9 @@ permalink: /privacy.html
 
 ### 1. Who we are
 
-Healthier You is a mobile application that helps you keep a photo-based meal journal with AI-assisted calorie estimates. This privacy policy explains what data we collect, how we use it, and the choices you have.
+Healthier You Calorie is a mobile application that helps you keep a photo-based meal journal with AI-assisted calorie estimates. This privacy policy explains what data we collect, how we use it, and the choices you have.
 
-This policy applies to the Healthier You iOS app and its supporting services (the "Service"). It does not apply to third-party websites or services linked from the Service.
+This policy applies to the Healthier You Calorie iOS app and its supporting services (the "Service"). It does not apply to third-party websites or services linked from the Service.
 
 If you have questions about this policy, contact us at **healthieryou.support@gmail.com**.
 
@@ -114,7 +114,7 @@ Each provider processes data on our behalf under its own privacy and security co
 
 ### 8. Children's privacy
 
-Healthier You is not directed to children under 13. We do not knowingly collect data from children under 13. If you believe a child has created an account, contact us at **healthieryou.support@gmail.com** and we will remove the account.
+Healthier You Calorie is not directed to children under 13. We do not knowingly collect data from children under 13. If you believe a child has created an account, contact us at **healthieryou.support@gmail.com** and we will remove the account.
 
 ### 9. Changes to this policy
 
@@ -131,9 +131,9 @@ For questions, requests, or concerns about your data:
 
 ### 1. 我们是谁
 
-Healthier You 是一款帮助你以照片方式记录饮食、并由 AI 协助估算热量的移动应用程序。本隐私政策说明我们收集哪些数据、如何使用，以及你拥有的选择。
+Healthier You · 饮食日记 是一款帮助你以照片方式记录饮食、并由 AI 协助估算热量的移动应用程序。本隐私政策说明我们收集哪些数据、如何使用，以及你拥有的选择。
 
-本政策适用于 Healthier You iOS 应用及其支持服务（统称"服务"），不适用于服务中链接的第三方网站或服务。
+本政策适用于 Healthier You · 饮食日记 iOS 应用及其支持服务（统称"服务"），不适用于服务中链接的第三方网站或服务。
 
 如果你对本政策有疑问，请联系 **healthieryou.support@gmail.com**。
 
@@ -227,7 +227,7 @@ Healthier You 是一款帮助你以照片方式记录饮食、并由 AI 协助�
 
 ### 8. 未成年人隐私
 
-Healthier You 并非面向 13 岁以下儿童设计。我们不会有意收集 13 岁以下儿童的数据。如你认为有儿童创建了账号，请联系 **healthieryou.support@gmail.com**，我们将移除该账号。
+Healthier You · 饮食日记 并非面向 13 岁以下儿童设计。我们不会有意收集 13 岁以下儿童的数据。如你认为有儿童创建了账号，请联系 **healthieryou.support@gmail.com**，我们将移除该账号。
 
 ### 9. 政策的变更
 

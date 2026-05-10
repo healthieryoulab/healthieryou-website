@@ -1,2 +1,2 @@
 # healthieryou-website
-Public website for Healthier You — privacy policy, support, FAQ
+Public website for Healthier You Calorie — privacy policy, support, FAQ

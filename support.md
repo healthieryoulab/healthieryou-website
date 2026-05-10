@@ -4,7 +4,7 @@ title: Support
 permalink: /support.html
 ---
 
-# Support · Healthier You
+# Support · Healthier You Calorie
 
 **Last updated**: May 10, 2026
 
@@ -16,9 +16,9 @@ permalink: /support.html
 
 ## English
 
-### About Healthier You
+### About Healthier You Calorie
 
-Healthier You is a calm, photo-first meal journal with AI-assisted calorie estimates. We prioritize awareness over scoring — no streaks, no judgment, no social feed.
+Healthier You Calorie is a calm, photo-first meal journal with AI-assisted calorie estimates. We prioritize awareness over scoring — no streaks, no judgment, no social feed.
 
 For privacy details, see our [Privacy Policy](https://healthieryoulab.github.io/healthieryou-website/privacy.html).
 
@@ -71,7 +71,7 @@ Settings → Account → Delete account. You will be asked to type DELETE to con
 
 **9. The app is asking for camera or photo permission. Why?**
 
-The camera is used to take meal photos. The photo library is used if you choose to pick a meal photo from your existing library. You can grant or deny these in iOS Settings → Healthier You.
+The camera is used to take meal photos. The photo library is used if you choose to pick a meal photo from your existing library. You can grant or deny these in iOS Settings → HealthierYouCalorie.
 
 **10. I changed my mind after onboarding. Can I see it again?**
 
@@ -85,7 +85,7 @@ Food tracking should help you build awareness, not make you feel anxious, guilty
 
 If tracking meals makes you feel distressed, or if you feel driven to restrict food, purge, misuse laxatives, or exercise excessively, consider pausing and reaching out to someone you trust or a qualified support service.
 
-Healthier You is not a medical device and does not provide diagnosis, treatment, or medical advice.
+Healthier You Calorie is not a medical device and does not provide diagnosis, treatment, or medical advice.
 
 If you would like region-specific support resources, the in-app **Settings → Help → When tracking feels stressful** page lists trained helplines.
 
@@ -110,9 +110,9 @@ If you would like region-specific support resources, the in-app **Settings → H
 
 ## 简体中文
 
-### 关于 Healthier You
+### 关于 Healthier You · 饮食日记
 
-Healthier You 是一本以照片为主的安静饮食日记，配 AI 辅助的热量估算。我们更关注饮食觉察，而不是打分——不连续打卡、不评判、不做社交 feed。
+Healthier You · 饮食日记 是一本以照片为主的安静饮食日记，配 AI 辅助的热量估算。我们更关注饮食觉察，而不是打分——不连续打卡、不评判、不做社交 feed。
 
 隐私相关详见 [隐私政策](https://healthieryoulab.github.io/healthieryou-website/privacy.html)。
 
@@ -165,7 +165,7 @@ AI 估算是近似值，通常存在一定不确定性。准确度会受到照�
 
 **9. 应用在请求相机或相册权限，为什么？**
 
-相机用于拍摄餐次照片。相册权限用于你从已有照片中选择餐次照片。你可以在 iOS 设置 → Healthier You 中授予或撤销。
+相机用于拍摄餐次照片。相册权限用于你从已有照片中选择餐次照片。你可以在 iOS 设置 → HealthierYouCalorie 中授予或撤销（桌面图标显示名暂未设置，iOS 设置内显示为 bundle 名 HealthierYouCalorie，无空格）。
 
 **10. 完成 Onboarding 后想再看一次怎么办？**
 
@@ -179,7 +179,7 @@ Onboarding 流程在每次设备安装后只运行一次。可以通过 FAQ 和�
 
 如果记录饮食让你明显痛苦，或者让你想要极端节食、催吐、滥用泻药或过度运动，请考虑先暂停记录，并向可信任的人或专业支持机构寻求帮助。
 
-Healthier You 不是医疗器械，也不提供诊断、治疗或医疗建议。
+Healthier You · 饮食日记 不是医疗器械，也不提供诊断、治疗或医疗建议。
 
 如需查看分地区的援助资源，App 内 **设置 → 帮助 → 当记录让你感到压力时** 列出了经过培训的援助热线。
 

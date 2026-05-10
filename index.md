@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Healthier You
+title: Healthier You Calorie
 ---
 
-# Healthier You
+# Healthier You Calorie
 
 A calm, photo-first meal journal with AI-assisted calorie estimates.
 
-一本以照片为主的安静饮食日记，配 AI 辅助的热量估算。
+Healthier You · 饮食日记：一本以照片为主的安静饮食日记，配 AI 辅助的热量估算。
 
 ---
 

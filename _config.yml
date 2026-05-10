@@ -1,0 +1,10 @@
+title: Healthier You
+description: Privacy policy and support for the Healthier You meal journal app
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - "*.md"

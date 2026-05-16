@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Email Verified · Healthier You Calorie</title>
+  <title>Healthier You Calorie</title>
   <style>
     :root {
       --accent: #E17F4F;
       --bg: #FBF6EF;
       --text: #2A2A2A;
       --muted: #6B6B6B;
+      --error: #C0392B;
+      --border: #E5E0D8;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -29,7 +31,6 @@
       background: white;
       border-radius: 16px;
       padding: 40px 32px;
-      text-align: center;
       box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
     }
     .check {
@@ -49,44 +50,230 @@
       font-size: 22px;
       font-weight: 600;
       margin-bottom: 12px;
+      text-align: center;
     }
     p {
       color: var(--muted);
       font-size: 15px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      text-align: center;
     }
     .divider {
       height: 1px;
-      background: #EEE;
-      margin: 28px 0;
+      background: var(--border);
+      margin: 24px 0;
     }
-    .lang-zh h1 { font-size: 20px; }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 6px;
+      margin-top: 14px;
+    }
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: inherit;
+      background: white;
+      color: var(--text);
+    }
+    input[type="password"]:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    button:hover { opacity: 0.92; }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .error {
+      color: var(--error);
+      font-size: 14px;
+      margin-top: 12px;
+      text-align: center;
+    }
+    .footer {
+      font-size: 13px;
+      margin-top: 28px;
+      color: var(--muted);
+    }
     a {
       color: var(--accent);
       text-decoration: none;
     }
     a:hover { text-decoration: underline; }
+    .hidden { display: none; }
   </style>
 </head>
 <body>
   <div class="card">
-    <div class="check">✓</div>
-
-    <h1>Email verified</h1>
-    <p>Your email is confirmed. You can close this page and return to the Healthier You Calorie app to sign in.</p>
-
-    <div class="divider"></div>
-
-    <div class="lang-zh">
-      <h1>邮箱已验证</h1>
-      <p>邮箱验证成功。你可以关闭此页面，回到 Healthier You · 饮食日记 App 登录。</p>
+    <div id="content">
+      <p>Loading… / 加载中…</p>
     </div>
-
     <div class="divider"></div>
-
-    <p style="font-size: 13px;">
+    <p class="footer">
       Need help? Contact <a href="mailto:healthieryou.support@gmail.com">healthieryou.support@gmail.com</a>
     </p>
   </div>
+
+  <script>
+    const SUPABASE_URL = 'https://viywmwioaswcbsmjyxab.supabase.co';
+    const SUPABASE_ANON_KEY = 'sb_publishable_P564CrDZovPelr0ijQGSJQ_nP5_EaoI';
+
+    function getHashParams() {
+      const hash = window.location.hash.substring(1);
+      const params = {};
+      hash.split('&').forEach(pair => {
+        const [key, value] = pair.split('=');
+        if (key) params[key] = decodeURIComponent(value || '');
+      });
+      return params;
+    }
+
+    function getQueryParams() {
+      const params = {};
+      new URLSearchParams(window.location.search).forEach((v, k) => { params[k] = v; });
+      return params;
+    }
+
+    function renderEmailVerified() {
+      document.getElementById('content').innerHTML = `
+        <div class="check">✓</div>
+        <h1>Email verified</h1>
+        <p>Your email is confirmed. You can close this page and return to the Healthier You Calorie app to sign in.</p>
+        <div class="divider"></div>
+        <h1>邮箱已验证</h1>
+        <p>邮箱验证成功。你可以关闭此页面，回到 Healthier You · 饮食日记 App 登录。</p>
+      `;
+    }
+
+    function renderPasswordResetForm(accessToken) {
+      document.getElementById('content').innerHTML = `
+        <h1>Reset your password</h1>
+        <p>Enter a new password to complete the reset.</p>
+        <p style="font-size: 13px;">重置密码 / 请输入新密码完成重置</p>
+        <form id="reset-form" autocomplete="off">
+          <label for="new-password">New password · 新密码</label>
+          <input id="new-password" type="password" minlength="6" required autocomplete="new-password" />
+          <label for="confirm-password">Confirm password · 再次输入</label>
+          <input id="confirm-password" type="password" minlength="6" required autocomplete="new-password" />
+          <button type="submit" id="submit-btn">Update password · 更新密码</button>
+          <p class="error hidden" id="error-msg"></p>
+        </form>
+      `;
+
+      const form = document.getElementById('reset-form');
+      const errorMsg = document.getElementById('error-msg');
+      const submitBtn = document.getElementById('submit-btn');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const newPassword = document.getElementById('new-password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+        errorMsg.classList.add('hidden');
+
+        if (newPassword.length < 6) {
+          errorMsg.textContent = 'Password must be at least 6 characters / 密码至少 6 位';
+          errorMsg.classList.remove('hidden');
+          return;
+        }
+        if (newPassword !== confirmPassword) {
+          errorMsg.textContent = 'Passwords do not match / 两次输入的密码不一致';
+          errorMsg.classList.remove('hidden');
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Updating… / 更新中…';
+
+        try {
+          const response = await fetch(`${SUPABASE_URL}/auth/v1/user`, {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+              'apikey': SUPABASE_ANON_KEY,
+              'Authorization': `Bearer ${accessToken}`
+            },
+            body: JSON.stringify({ password: newPassword })
+          });
+
+          if (response.ok) {
+            renderPasswordResetSuccess();
+          } else {
+            const error = await response.json().catch(() => ({}));
+            const message = error.msg || error.error_description || error.error || `HTTP ${response.status}`;
+            errorMsg.textContent = `Failed to update password: ${message}`;
+            errorMsg.classList.remove('hidden');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Update password · 更新密码';
+          }
+        } catch (err) {
+          errorMsg.textContent = `Network error: ${err.message}`;
+          errorMsg.classList.remove('hidden');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Update password · 更新密码';
+        }
+      });
+    }
+
+    function renderPasswordResetSuccess() {
+      document.getElementById('content').innerHTML = `
+        <div class="check">✓</div>
+        <h1>Password updated</h1>
+        <p>You can now sign in to the Healthier You Calorie app with your new password.</p>
+        <div class="divider"></div>
+        <h1>密码已更新</h1>
+        <p>现在你可以用新密码登录 Healthier You · 饮食日记 App。</p>
+      `;
+    }
+
+    function renderError(message) {
+      document.getElementById('content').innerHTML = `
+        <h1>Something went wrong</h1>
+        <p>${message}</p>
+        <div class="divider"></div>
+        <h1>遇到了一个问题</h1>
+        <p>请回到 Healthier You · 饮食日记 App 重试，或联系支持邮箱。</p>
+      `;
+    }
+
+    // Main dispatcher
+    const hashParams = getHashParams();
+    const queryParams = getQueryParams();
+    const params = Object.keys(hashParams).length > 0 ? hashParams : queryParams;
+
+    if (params.error || params.error_code) {
+      renderError(params.error_description || params.error || 'Unknown error from email link.');
+    } else if (params.type === 'recovery' && params.access_token) {
+      renderPasswordResetForm(params.access_token);
+    } else if (params.type === 'signup' || params.type === 'email_change' || params.type === 'magiclink') {
+      renderEmailVerified();
+    } else if (params.access_token) {
+      // No type but has token — assume verification success
+      renderEmailVerified();
+    } else {
+      // No params at all — user navigated here directly
+      renderEmailVerified();
+    }
+  </script>
 </body>
 </html>

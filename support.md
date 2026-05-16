@@ -71,7 +71,7 @@ Settings → Account → Delete account. You will be asked to type DELETE to con
 
 **9. The app is asking for camera or photo permission. Why?**
 
-The camera is used to take meal photos. The photo library is used if you choose to pick a meal photo from your existing library. You can grant or deny these in iOS Settings → HealthierYouCalorie.
+The camera is used to take meal photos. The photo library is used if you choose to pick a meal photo from your existing library. You can grant or deny these in iOS Settings → HY Calorie.
 
 **10. I changed my mind after onboarding. Can I see it again?**
 
@@ -165,7 +165,7 @@ AI 估算是近似值，通常存在一定不确定性。准确度会受到照�
 
 **9. 应用在请求相机或相册权限，为什么？**
 
-相机用于拍摄餐次照片。相册权限用于你从已有照片中选择餐次照片。你可以在 iOS 设置 → HealthierYouCalorie 中授予或撤销（桌面图标显示名暂未设置，iOS 设置内显示为 bundle 名 HealthierYouCalorie，无空格）。
+相机用于拍摄餐次照片。相册权限用于你从已有照片中选择餐次照片。你可以在 iOS 设置 → 饮食日记 中授予或撤销。
 
 **10. 完成 Onboarding 后想再看一次怎么办？**
 

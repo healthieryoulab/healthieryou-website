@@ -12,6 +12,7 @@ Healthier You · 饮食日记：一本以照片为主的安静饮食日记，配
 ---
 
 - [Privacy Policy / 隐私政策](privacy.html)
+- [Terms of Use / 使用条款](terms.html)
 - [Support / 用户支持](support.html)
 
 ---
